@@ -1,0 +1,287 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  width: 90vw;
+  margin: auto;
+  background-color: #F2F0F9;
+  font-family: 'Roboto', sans-serif;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 1.3rem 5px 1.5rem 5px;
+  font-family: 'Roboto', sans-serif;
+  position: relative;
+  font-weight: 800;
+  color: #8a84af;
+}
+
+header .header-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  position: relative;
+}
+
+header .header-nav a {
+  color: #938eb3;
+  text-decoration: none;
+  position: relative;
+}
+
+header .header-nav a:hover {
+  color: black;
+}
+
+header .total-amount {
+  -webkit-box-flex: 4;
+      -ms-flex-positive: 4;
+          flex-grow: 4;
+  text-align: end;
+}
+
+.cool-link {
+  display: inline-block;
+  color: #000;
+  text-decoration: none;
+}
+
+.cool-link::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 5px;
+  background: #6D5BD0;
+  -webkit-transition: width .3s;
+  transition: width .3s;
+  border-radius: 15px;
+  position: absolute;
+  bottom: -15px;
+  left: 0;
+  border-radius: 15px;
+}
+
+.cool-link:hover::after,
+.cool-link:focus::after {
+  width: 100%;
+}
+
+header::before {
+  content: '';
+  height: 3px;
+  position: absolute;
+  bottom: -13px;
+  right: 0;
+  background-color: gray;
+  width: 100%;
+}
+
+span.moneyblue {
+  font-size: 1.6rem;
+  color: #6D5BD0;
+}
+
+.usd {
+  font-size: 1.4rem;
+}
+
+.material-icons, .icon-text {
+  vertical-align: middle;
+  color: #6D5BD0 !important;
+}
+
+main {
+  width: 100%;
+  background-color: #fff;
+  border-radius: 10px;
+  -webkit-box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+          box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  margin-top: 40px;
+}
+
+main .heading {
+  padding: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 25px;
+}
+
+main .heading .head-left {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  gap: 17px;
+}
+
+main .heading .head-left .filter {
+  border-radius: 10px;
+  padding: 10px 10px 10px 10px;
+  -webkit-box-shadow: rgba(250, 252, 253, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+          box-shadow: rgba(250, 252, 253, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  border: .1px solid gray;
+  font-size: 1rem;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+main .heading .head-left .filter span {
+  margin-right: 5px;
+}
+
+main .heading .head-left .search-box {
+  -ms-flex-preferred-size: 70%;
+      flex-basis: 70%;
+}
+
+main .heading .head-left .search-box input {
+  width: 100%;
+  border: none;
+  background: #F2F0F9;
+  padding: 15px 15px 15px 10px;
+  border-radius: 10px;
+  font-size: 1rem;
+}
+
+main .heading .head-right {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  text-align: right;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+main .heading .head-right h5 {
+  font-size: 1.35rem;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  background-color: #6D5BD0;
+  color: #fff;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.main-table {
+  background-color: #F2F0F9;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 1.5rem;
+}
+
+.main-table .table-head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #7e7a9c;
+  padding: 1rem 1rem 1rem 1rem;
+  font-family: 'Roboto', sans-serif;
+}
+
+.main-table .table-head div:nth-child(n+1):nth-child(-n+3) {
+  -webkit-box-flex: 2;
+      -ms-flex-positive: 2;
+          flex-grow: 2;
+}
+
+.main-table .table-head div:nth-child(n+4):nth-child(-n+5) {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.main-table .table-head div:last-child {
+  -webkit-box-flex: auto;
+      -ms-flex-positive: auto;
+          flex-grow: auto;
+}
+
+.table-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  gap: 1rem;
+}
+
+.table-content .person {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.table-content div:nth-child(n+1):nth-child(-n+3) {
+  -webkit-box-flex: 2;
+      -ms-flex-positive: 2;
+          flex-grow: 2;
+}
+
+.table-content div:nth-child(n+4):nth-child(-n+5) {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.table-content div:last-child {
+  -webkit-box-flex: auto;
+      -ms-flex-positive: auto;
+          flex-grow: auto;
+}
+/*# sourceMappingURL=style.css.map */

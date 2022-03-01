@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+$purple : #6D5BD0;
+$lightpurple: #F2F0F9;
+
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 90vw;
+    margin: auto;
+    background-color: #F2F0F9;
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1.3rem 5px 1.5rem 5px;
+    font-family: 'Roboto', sans-serif;
+    position: relative;
+    font-weight: 800;
+    color: #8a84af;
+    .header-nav {
+        display: flex;
+        justify-content: space-between;
+        flex-grow: 1;
+        position: relative;
+        a {
+            color: #938eb3;
+            text-decoration: none;
+            position: relative;
+        }
+        a:hover {
+            color: black;
+        }
+    };
+    .total-amount {
+        flex-grow: 4;
+        text-align: end;
+    }
+}
+
+
+.cool-link {
+    display: inline-block;
+    color: #000;
+    text-decoration: none;
+}
+
+.cool-link::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 5px;
+    background: #6D5BD0;
+    transition: width .3s;
+    border-radius: 15px;
+    position: absolute;
+    bottom: -15px;
+    left: 0;
+    border-radius: 15px;
+}
+
+.cool-link:hover::after,
+.cool-link:focus::after {
+    width: 100%;
+    //transition: width .3s;
+}
+
+
+header::before {
+    content: '';
+    height: 3px;
+    position: absolute;
+    bottom: -13px;
+    right: 0;
+    background-color: gray;
+    width: 100%;
+}
+
+span.moneyblue {
+    font-size: 1.6rem;
+    color: $purple;
+}
+
+.usd{
+    font-size: 1.4rem;
+}
+
+.material-icons, .icon-text {
+    vertical-align: middle;
+    color: $purple !important;
+  }
+
+main {
+    width: 100%;
+    background-color: #fff;
+    
+    border-radius: 10px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    margin-top: 40px;
+    .heading {
+        padding:15px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 25px;
+        .head-left {
+            flex-grow: 1;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            gap: 17px;
+            .filter {
+                border-radius: 10px;
+                padding: 10px 10px 10px 10px;
+                box-shadow: rgba(250, 252, 253, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+                border: .1px solid gray;
+                font-size: 1rem;
+                span{
+                    margin-right: 5px;
+                }
+                width: max-content
+            };
+            .search-box{
+                flex-basis: 70%;
+                input {
+                    width: 100%;
+                    border: none;
+                    background: $lightpurple;
+                    padding: 15px 15px 15px 10px;
+                    border-radius: 10px;
+                    font-size: 1rem;
+                }
+            }
+        }
+        .head-right {
+            flex-grow: 1;
+            text-align: right;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            h5 {
+                font-size: 1.35rem;
+                width: max-content;
+                background-color: $purple;
+                color: #fff;
+                padding: 10px;
+                border-radius: 10px;
+            }
+        }
+    }
+}
+
+.main-table {
+    background-color: $lightpurple;
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.5rem;
+    .table-head {
+        display: flex;
+        color: #7e7a9c;
+        padding: 1rem 1rem 1rem 1rem;
+        font: {
+            family: 'Roboto', sans-serif;
+        };
+        div:nth-child(n+1):nth-child(-n+3) {flex-grow: 2};
+        div:nth-child(n+4):nth-child(-n+5) {flex-grow: 1};
+        div:last-child {flex-grow: auto}
+    }
+}
+
+.table-content {
+    display: flex;
+    flex-direction: column;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    gap: 1rem;
+    .person {
+        display: flex;
+    };
+    div:nth-child(n+1):nth-child(-n+3) {flex-grow: 2};
+        div:nth-child(n+4):nth-child(-n+5) {flex-grow: 1};
+        div:last-child {flex-grow: auto}
+}
